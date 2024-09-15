@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    /* Define Bootstrap screen sizes */
+    --bs-screen-xs: 0;
+    --bs-screen-sm: 576px;
+    --bs-screen-md: 768px;
+    --bs-screen-lg: 992px;
+    --bs-screen-xl: 1200px;
+    --bs-screen-xxl: 1400px;
+}
+
+/* Navbar styling */
+#navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    background-color: black;
+    width: 100%; /* Full width on all screens */
+    /* padding: 10px 20px; */
+}
+
+#navbar.scrolled {
+    background-color: #080018;
+    height: 100px;
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Navbar logo */
+#navbar .navbar-brand img {
+    width: 65px;
+    height: 65px;
+    border-radius: 0;
+}
+
+/* Navbar links */
+.nav-links ul {
+    display: flex;
+
+    align-items: center;
+    width: 50%; /* Take 90% of the screen on larger devices */
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar link items */
+.nav-links ul li {
+    padding: 0 20px; /* Reduced padding between items */
+    margin: 0; /* Ensure no additional margins */
+}
+
+/* Navbar link styles */
+.nav-links ul li a {
+    color: rgb(202, 201, 201);
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+
+    font-size: 17px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for link text */
+.nav-links ul li a:hover {
+    color: #ff2a1a;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ff2a1a;
+    display: block;
+    margin: auto;
+    transition: width 0.7s ease;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-links ul {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links ul {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #navbar {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .nav-links {
+        margin-right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 17px;
+        text-align: left;
+        width: 100%;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .navbar-brand {
+        background-color: #ff2a1a;
+    }
+}
