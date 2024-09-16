@@ -1,63 +1,64 @@
-"use client"; 
+import "./Navbar.css";
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect } from 'react';
-import './Navbar.css';
+const Navbar = () => {
+    return (
+        <nav>
+            <div className="logo">
+                <Image
+                    src="/assets/brand-logo/logo2.png"
+                    alt="Logo"
+                    width={300}
+                    height={300}
+                />
+            </div>
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" className="checkbtn">
+                <FontAwesomeIcon icon={faBars} />
+            </label>
 
-import 'bootstrap/dist/js/bootstrap.bundle';
+            <ul className="list">
+                <li id="active">
+                    <Link href="/">Home</Link>
+                </li>
+                <li>
+                    <Link href="/about-us">About Us</Link>
+                </li>
+                <li id="drop">
+                    <Link href="/events">Events</Link>
+                    <ul>
+                        <li>
+                            <Link href="/events/Assam">Assam</Link>
+                        </li>
+                        <li>
+                            <Link href="/events/Meghalaya">Meghalaya</Link>
+                        </li>
+                        <li>
+                            <Link href="/events/Arunachal-Pradesh">Arunachal Pradesh</Link>
+                        </li>
+                        <li>
+                            <Link href="/events">View all..</Link>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <Link href="/team">Team</Link>
+                </li>
+                <li>
+                    <Link href="/gallery">Gallery</Link>
+                </li>
+                <li>
+                    <Link href="/contact">Reach Us</Link>
+                </li>
+                <li>
+                    <Link href="/esummit">E-Summit 24</Link>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
-export default function Navbar() {
-  useEffect(() => {
-    typeof document !== undefined
-      ? require('bootstrap/dist/js/bootstrap.bundle')
-      : null;
-  }, []);
-
-  return (
-    <nav className="navbar navbar-expand-sm ms-5" id="navbar">
-      <div className="navbar-brand">
-        <Image
-          src="/assets/brand-logo/logo2.png" // Updated with relative path
-          alt="Club Logo"
-          width={65}
-          height={65}
-          className="d-inline-block"
-          id="icon"
-        />
-      </div>
-
-      <button
-        className="navbar-toggler d-lg-none bg-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navLinks"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="nav-links collapse navbar-collapse" id="navLinks">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link href="/" className="nav-link">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/about" className="nav-link">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/events" className="nav-link">Events</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/team" className="nav-link">Team</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/gallery" className="nav-link">Gallery</Link>
-          </li>
-          <li className="nav-item">
-            <a href="#reach-us" className="nav-link">Reach us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
+export default Navbar;
