@@ -1,0 +1,33 @@
+.welcome-box {
+    padding: 2rem;
+    background-color: #f7f7f709;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(241, 235, 235, 0.747);
+    text-align: center;
+    max-width: 740px;
+    height: auto;
+    margin: 10rem auto;
+}
+
+.welcome-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fff7f7;
+    margin-bottom: 1rem;
+}
+
+.welcome-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: #d8d2d2;
+    line-height: 1.7;
+}
+
+.title{
+    font-size: 2.7rem;
+    /* font-weight: 600; */
+    font-family: 'Poppins', sans-serif;
+    color: #dd1313;
+    margin-bottom: 1rem;
+}
