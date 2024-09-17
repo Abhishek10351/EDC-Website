@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Montserrat:wght@300;700&family=Oxygen&family=Poppins:wght@300;400;500&family=Roboto:wght@500&family=Unbounded:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+
+
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 3fr 0fr; /* Two equal columns */
+    align-items: center;
+    padding: 5rem;
+    /* background-color: blueviolet; */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(165, 77, 77); */
+}
+
+.left-section .text {
+    width: auto;
+    /* background-color: cyan; */
+    text-align: left;
+}
+
+.right-section {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+}
+.animate-character {
+    font-family: "Poppins", sans-serif; /* Change font to Unbounded */
+    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.text p {
+    margin: 40px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .right-section {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hero-section {
+        display: flex;
+        
+        background-color: #fff70018;
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .right-section {
+        display: none; /* Hide the right section (Lottie animation) */
+    }
+
+    .left-section .text h3 {
+        margin-top: 5rem; /* Adjust margin for smaller screens */
+        font-size: 2.2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align the header text */
+    }
+
+    .left-section a {
+        display: block; /* Ensure the button is visible */
+        text-align: center;
+        margin: 20px auto;
+        font-size: 1.2rem; /* Adjust button size */
+    }
+
+    .left-section a dotlottie-player {
+        display: block;
+        margin: 0 auto;
+        width: 60px; /* Adjust button size */
+        height: 60px;
+    }
+
+    .hero-section {
+        padding: 2rem; /* Reduce padding for smaller screens */
+    }
+}
+
