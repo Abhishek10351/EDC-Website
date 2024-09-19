@@ -1,29 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import "./Carousel.css";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 // Define slides outside the component to avoid re-creating them on each render
 const slides = [
     {
-        image: "./assets/carousel-img/1.jpg",
+        image: "1.jpg",
         alt: "Slide 1",
     },
     {
-        image: "./assets/carousel-img/2.jpg",
+        image: "2.jpg",
         alt: "Slide 2",
     },
     {
-        image: "./assets/carousel-img/3.jpg",
+        image: "3.jpg",
         alt: "Slide 3",
     },
     {
-        image: "./assets/carousel-img/4.jpg",
+        image: "4.jpg",
         alt: "Slide 4",
-    }
-    
+    },
 ];
-
 export default function Carousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -57,7 +56,12 @@ export default function Carousel() {
                         }`}
                     >
                         {slide.image ? (
-                            <img src={slide.image} alt={slide.alt} />
+                            <Image
+                                src={`/assets/carousel-img/${slide.image}`}
+                                alt={slide.alt}
+                                width="100"
+                                height={"50"}
+                            />
                         ) : (
                             <div
                                 dangerouslySetInnerHTML={{
