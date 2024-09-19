@@ -1,7 +1,6 @@
-"use client"; // To ensure it's treated as a Client Component
+"use client"; 
 
-import React from "react";
-import "./Welcome.css"; // Importing styles for the Welcome component
+import "./Welcome.css"; 
 import { Player } from "@lottiefiles/react-lottie-player"; // Assuming you're using Lottie Player in Next.js
 
 export default function Welcome() {

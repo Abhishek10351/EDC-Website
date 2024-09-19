@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Carousel.css";
 
 // Define slides outside the component to avoid re-creating them on each render

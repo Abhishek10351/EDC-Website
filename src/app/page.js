@@ -1,4 +1,4 @@
-import HomePage from "../../sites/home/HomePage"; // Renamed import
+import {HomePage} from "../../sites"; 
 
 export default function Home() {
     return <HomePage />;

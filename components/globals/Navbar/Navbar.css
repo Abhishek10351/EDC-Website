@@ -73,20 +73,6 @@ nav ul li a:hover {
     color: #ffffff; /* Change text color on hover */
 }
 
-nav ul ul {
-    position: absolute;
-    z-index: 100;
-    padding: 0.5rem;
-    display: none;
-    width: 120%;
-    background-color: #222020ef;
-    border-radius: 2px;
-}
-
-nav ul ul li {
-    text-align: center;
-    width: 100%;
-}
 
 nav ul ul li a {
     width: 100%;
@@ -94,9 +80,6 @@ nav ul ul li a {
     font-size: 0.9rem;
 }
 
-nav ul li:hover > ul {
-    display: block;
-}
 
 #homeli {
     color: #e3d792;
@@ -210,11 +193,6 @@ nav ul li:hover > ul {
 
     #homeli {
         background-color: rgba(0, 0, 0, 0);
-    }
-
-    #drop ul {
-        display: none;
-        opacity: 0;
     }
 
     .list {

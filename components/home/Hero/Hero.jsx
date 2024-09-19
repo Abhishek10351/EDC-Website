@@ -1,5 +1,4 @@
-import React from "react";
-import "./Hero.css"; // Assuming you will style it with CSS
+import "./Hero.css"; 
 
 export default function Hero() {
     return (

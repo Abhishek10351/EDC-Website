@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
@@ -27,22 +27,8 @@ const Navbar = () => {
                 <li>
                     <Link href="/about-us">About Us</Link>
                 </li>
-                <li id="drop">
+                <li>
                     <Link href="/events">Events</Link>
-                    <ul>
-                        <li>
-                            <Link href="/events/Assam">Assam</Link>
-                        </li>
-                        <li>
-                            <Link href="/events/Meghalaya">Meghalaya</Link>
-                        </li>
-                        <li>
-                            <Link href="/events/Arunachal-Pradesh">Arunachal Pradesh</Link>
-                        </li>
-                        <li>
-                            <Link href="/events">View all..</Link>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <Link href="/team">Team</Link>
