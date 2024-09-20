@@ -1,7 +1,9 @@
+import "./intro.css";
+
 export default function Intro() {
     return (
-        <section class="intro">
-            <div class="intro-text">
+        <section className="intro">
+            <div className="intro-text">
                 <h1>
                     ABOUT<span> US</span>
                 </h1>
@@ -13,7 +15,7 @@ export default function Intro() {
                     students to develop their entrepreneurial skills, connect
                     with industry professionals, and collaborate on innovative
                     projects We believe that entrepreneurship is not just about
-                    starting companies, but a pathway towards India’s
+                    starting companies, but a pathway towards India&apos;s
                     socio-economic development.
                 </p>
             </div>

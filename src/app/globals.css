@@ -1,11 +1,29 @@
 :root {
-    /**/
-    /*other default setting ...*/
-    /**/
     --background: rgb(0, 0, 0);
-    --secondary-glow: conic-gradient(from 0deg, #ff79c6, #bd93f9, #ffb86c, #ff5555, transparent);
+    --secondary-glow: conic-gradient(
+        from 0deg,
+        #ff79c6,
+        #bd93f9,
+        #ffb86c,
+        #ff5555,
+        transparent
+    );
 
-    --third-glow: conic-gradient(from 90deg, #50fa7b, #8be9fd, #ff79c6, #f1fa8c, transparent);
+    --third-glow: conic-gradient(
+        from 90deg,
+        #50fa7b,
+        #8be9fd,
+        #ff79c6,
+        #f1fa8c,
+        transparent
+    );
+
+    --highlight-color: #dd1313;
+
+    --box-shadow-1: rgba(241, 235, 235, 0.747);
+    --heading-font: "Poppins", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --component-background: #f7f7f709;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,62 +41,60 @@ body {
 
 /* animation */
 body::before {
-  content: "";
-  position: absolute;
-  background: var(--third-glow);
-  border-radius: 50%;
-  width: 30vw; /* Reduced width to fit on the right */
-  height: 30vw;
-  margin-left: 30rem; /* Shifted more to the right */
-  filter: blur(90px);
-  top: calc(50vh - 15vw); /* Adjusted for new size */
-  left: calc(70vw); /* Positioned to the right side */
-  animation: animateBefore 10s infinite ease-in-out;
+    /* content: ""; */
+    position: absolute;
+    background: var(--third-glow);
+    border-radius: 50%;
+    width: 30vw; /* Reduced width to fit on the right */
+    height: 30vw;
+    margin-left: 30rem; /* Shifted more to the right */
+    filter: blur(90px);
+    top: calc(50vh - 15vw); /* Adjusted for new size */
+    left: calc(70vw); /* Positioned to the right side */
+    /* animation: animateBefore 10s infinite ease-in-out; */
 }
 
 body::after {
-  content: "";
-  position: flex;
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 400px;
-  height: 500px;
-  filter: blur(90px);
-  top: calc(50vh - 250px);
-  left: calc(65vw); /* Positioned further right */
-  animation: animateAfter 10s infinite ease-in-out;
+    /* content: ""; */
+    position: flex;
+    background: var(--secondary-glow);
+    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    filter: blur(90px);
+    top: calc(50vh - 250px);
+    left: calc(65vw); /* Positioned further right */
+    /* animation: animateAfter 10s infinite ease-in-out; */
 }
 
 @keyframes animateBefore {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(150px) scale(0.8); /* Slightly reduced movement */
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(150px) scale(0.8); /* Slightly reduced movement */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes animateAfter {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-100px) scale(1.2); /* Reduced horizontal movement */
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px) scale(1.2); /* Reduced horizontal movement */
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
-
-
 
 body {
     color: var(--foreground);
     background: var(--background);
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
