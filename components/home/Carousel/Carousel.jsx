@@ -46,8 +46,8 @@ export default function Carousel() {
     }, [currentSlide]);
 
     return (
-        <div className="carousel">
-            <main id="carousel">
+        <section className="carousel">
+            <div id="carousel">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
@@ -60,7 +60,9 @@ export default function Carousel() {
                                 src={`/assets/carousel-img/${slide.image}`}
                                 alt={slide.alt}
                                 width="100"
-                                height={"50"}
+                                height="50"
+                                quality={100}
+                                priority= {true}
                             />
                         ) : (
                             <div
@@ -71,7 +73,7 @@ export default function Carousel() {
                         )}
                     </div>
                 ))}
-            </main>
+            </div>
 
             <button className="carousel-prev" onClick={handlePrev}>
                 &#10094;
@@ -79,6 +81,6 @@ export default function Carousel() {
             <button className="carousel-next" onClick={handleNext}>
                 &#10095;
             </button>
-        </div>
+        </section>
     );
 }
