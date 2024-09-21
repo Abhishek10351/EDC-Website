@@ -1,5 +1,5 @@
 import "./activity.css";
-
+import Image from "next/image";
 
 export default function Activity() {
     return (
@@ -8,10 +8,15 @@ export default function Activity() {
                 Club <span>Activities</span> and <span>programs</span>
             </h2>
             <div className="row">
-
                 <div className="card card-circle">
                     <div className="card-body">
-                        <img src="./assets/activities/seminar.png" alt="" />
+                        <Image
+                            className="card-img"
+                            src="/assets/activities/seminar.png"
+                            alt=""
+                            width={100}
+                            height={100}
+                        />
                         <h5 className="card-title">Workshops & Seminars</h5>
                         <p className="card-text">
                             Our club organizes regular workshops and seminars
@@ -23,7 +28,13 @@ export default function Activity() {
                 </div>
                 <div className="card card-circle">
                     <div className="card-body">
-                        <img src="./assets/activities/competition.png" alt="" />
+                        <Image
+                            className="card-img"
+                            src="/assets/activities/competition.png"
+                            alt=""
+                            width={100}
+                            height={100}
+                        />
                         <h5 className="card-title">
                             Entrepreneurship Competitions
                         </h5>
@@ -36,7 +47,13 @@ export default function Activity() {
                 </div>
                 <div className="card card-circle">
                     <div className="card-body">
-                        <img src="./assets/activities/funding.png" alt="" />
+                        <Image
+                            className="card-img"
+                            src="/assets/activities/funding.png"
+                            alt=""
+                            width={100}
+                            height={100}
+                        />
                         <h5 className="card-title">Startup Incubator</h5>
                         <p className="card-text">
                             Our club provides support for members with promising
@@ -48,6 +65,5 @@ export default function Activity() {
                 </div>
             </div>
         </div>
-        
     );
 }
