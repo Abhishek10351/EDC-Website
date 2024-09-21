@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Readex+Pro:wght@160..700&family=Teko:wght@300..700&display=swap");
+
+.nav {
+    display: flex;
+    width: calc(100vw - 85px);
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    background-color: transparent;
+    margin: 15px 85px;
+    padding-top: 26px;
+    transition: all 0.3s ease;
+}
+
+.nav-fixed {
+    display: flex;
+    position: fixed;
+    width: calc(100vw - 60px);
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    background-color: transparent;
+    padding: 15px 30px;
+    z-index: 2;
+}
+
+/* Sidebar */
+.nav-bar {
+    position: fixed;
+    width: 30vw; /* Adjust width as needed */
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.774);
+    top: 0;
+    left: -50vw; /* Start off-screen to the left */
+    transition: left 0.3s ease; /* Smooth slide effect */
+    z-index: 1000; /* Above other elements */
+}
+
+.nav-bar.active {
+    left: 0; /* Slide in from the left */
+}
+
+/* Logo */
+.esmt-icon {
+    width: auto; /* Set width explicitly */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Hamburger Menu */
+.hamburger-wrapper {
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    border-radius: 50%; /* Round shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Indicate clickable */
+}
+
+.nav-menu-items {
+    list-style-type: none;
+    padding: 20px; /* Add padding */
+}
+
+/* Menu Item Styling */
+.nav-menu-items li {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Space between items */
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.3rem;
+    text-align: center;
+    /* margin: 1rem 2rem; */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .nav {
+        width: calc(100vw - 60px);
+        margin: 10px 60px;
+        padding-top: 16px;
+    }
+
+    /* Adjust for mobile */
+    .hamburger-wrapper {
+        height: 48px;
+        width: 48px;
+    }
+}
