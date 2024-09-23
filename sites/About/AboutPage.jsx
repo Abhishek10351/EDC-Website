@@ -1,4 +1,4 @@
-import { Intro, Activity, Mission } from "../../components/about";
+import { Intro, Activity, Mission, Membership } from "../../components/about";
 
 export default function AboutPage() {
     return (
@@ -6,6 +6,7 @@ export default function AboutPage() {
             <Intro />
             <Mission />
             <Activity />
+            <Membership />
         </main>
     );
 }

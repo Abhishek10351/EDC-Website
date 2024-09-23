@@ -51,7 +51,8 @@
 }
 .card-body .card-img {
     width: 150px;
-    aspect-ratio: 1;
+    height: 150px;
+    /* aspect-ratio: 1; */
     margin: -15px 0px;
     margin-top: -10px;
 }
@@ -122,7 +123,8 @@
     .card-body .card-text {
         font-size: 16px;
     }
-    .card-body img {
+    .card-body .card-img {
+        width: 100px;
         width: 100px;
         margin: 0px 0px;
     }
@@ -156,8 +158,9 @@
     .card-body .card-text {
         font-size: 14px;
     }
-    .card-body img {
+    .card-body.card-image {
         width: 100px;
+        height: 100px;
         margin: 0px;
         margin-top: 0px;
     }
@@ -174,8 +177,9 @@
         width: 360px;
         margin: 0px auto;
     }
-    .card-body img {
+    .card-body.card-image {
         width: 120px;
+        height: 120px;
         margin: -20px 0px;
         margin-top: 0px;
     }
@@ -209,8 +213,9 @@
     .card-body .card-text {
         font-size: 14px;
     }
-    .card-body img {
+    .card-body.card-image {
         width: 100px;
+        height: 100px;
         margin: -20px 0px;
         margin-top: 0px;
     }
