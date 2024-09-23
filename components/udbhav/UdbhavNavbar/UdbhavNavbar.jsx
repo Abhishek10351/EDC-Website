@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Twirl as Hamburger } from "hamburger-react";
-import Image from "next/image"; // Use Image from Next.js for optimized loading
+import Image from "next/image"; 
 
-import "./Navbar.css";
+import "./UdbhavNavbar.css";
 
 export default function Navbar() {
     const [sidebar, setSidebar] = useState(false);
