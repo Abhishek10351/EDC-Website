@@ -24,8 +24,8 @@ export default function Navbar() {
                         <Image
                             src="/udbhav/logo/logo 2.png"
                             alt="Logo"
-                            width={50}
-                            height={50}
+                            width={100}
+                            height={80}
                             className="esmt-icon"
                         />
                     </Link>
