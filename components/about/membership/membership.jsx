@@ -4,7 +4,7 @@ import "./membership.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export default function Membership() {
     return (
-        <div class="membership-info animate-on-scroll">
+        <div className="membership-info">
             <h2>Membership Information</h2>
             <div id="think">
                 <DotLottieReact
@@ -27,3 +27,4 @@ export default function Membership() {
         </div>
     );
 }
+
