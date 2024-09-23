@@ -1,5 +1,5 @@
-import Udbhav from "../../../sites/Udbhav/Udbhav"; // Corrected import
+import {Udbhav} from "../../../sites";
 
-export default function UdbhavPage() { // Renamed the function to UdbhavPage
+export default function UdbhavPage() {
     return <Udbhav />;
 }
