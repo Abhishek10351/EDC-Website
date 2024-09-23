@@ -1,7 +1,8 @@
 "use client"; 
 
 import "./Welcome.css"; 
-import { Player } from "@lottiefiles/react-lottie-player"; // Assuming you're using Lottie Player in Next.js
+// import { Player } from "@lottiefiles/react-lottie-player";
+// Assuming you're using Lottie Player in Next.js
 
 export default function Welcome() {
     return (
