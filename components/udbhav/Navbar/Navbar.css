@@ -41,7 +41,8 @@
 /* Logo */
 .esmt-icon {
     width: auto; /* Set width explicitly */
-    height: 50px; /* Maintain aspect ratio */
+    height: 5.2rem; /* Maintain aspect ratio */
+    margin-left: 1.5rem;
 }
 
 /* Hamburger Menu */
@@ -75,11 +76,56 @@
 }
 
 /* Media Queries */
+
+/* Mobile screens (576px and below) */
+@media only screen and (max-width: 576px) {
+    .nav {
+        width: 100vw;
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgb(255, 255, 255); /* Add a slight background color */
+    }
+
+    .nav-fixed {
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Logo */
+    .esmt-icon {
+        height: 4rem; /* Smaller logo */
+        margin-left: 0;
+    }
+
+    /* Hamburger adjustments */
+    .hamburger-wrapper {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Sidebar */
+    .nav-bar {
+        width: 80vw; /* Larger width for better usability */
+        left: -81vw;
+    }
+
+    .nav-menu-items li {
+        font-size: 2.4rem; /* Adjust text size for smaller screens */
+        margin-bottom: 30px;
+        margin-top: 45px;
+    }
+}
+
+/* Tablets and small devices (768px and below) */
 @media only screen and (max-width: 768px) {
     .nav {
         width: calc(100vw - 60px);
         margin: 10px 60px;
         padding-top: 16px;
+        background-color: rgb(255, 255, 255);
     }
 
     /* Adjust for mobile */
