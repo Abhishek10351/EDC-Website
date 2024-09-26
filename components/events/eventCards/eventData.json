@@ -1,0 +1,51 @@
+[
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Quiz Competition",
+        "date": "21-08-2024",
+        "venue": "BKB Seminar Hall, CITK",
+        "link": "",
+        "completed": true
+    },
+
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "DOER Ideation Challenge",
+        "date": "",
+        "venue": "Online",
+        "link": "",
+        "completed": true
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Antha-Prerna",
+        "date": "23-11-2023",
+        "venue": "Virtual Classroom",
+        "link": "",
+        "completed": true
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Case Study Competition",
+        "date": "30-08-2023",
+        "venue": "BKB Seminar Hall, CITK",
+        "link": "",
+        "completed": true
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Orientation 2023",
+        "date": "12-08-2023",
+        "venue": "BKB Seminar Hall, CITK",
+        "link": "",
+        "completed": true
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Intraday 2023",
+        "date": "24-03-2023",
+        "venue": "Near VCR",
+        "link": "",
+        "completed": true
+    }
+]

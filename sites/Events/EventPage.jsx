@@ -1,5 +1,5 @@
-import { EventCard } from "../../components/events";
+import { EventSection } from "../../components/events";
 
 export default function Event() {
-    return <EventCard />;
+    return <EventSection />;
 }
