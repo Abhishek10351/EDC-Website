@@ -78,7 +78,6 @@ img {
     vertical-align: middle;
 }
 .team {
-    min-height: 100vh;
     padding: 80px 0;
 }
 .team-item {
@@ -235,7 +234,6 @@ img {
     /* vertical-align: middle; */
 }
 .team {
-    min-height: 100vh;
     padding: 80px 0;
 }
 .coreteam-item {
@@ -374,7 +372,6 @@ img {
     vertical-align: middle;
 }
 .team {
-    min-height: 100vh;
     padding: 80px 0;
 }
 
@@ -482,17 +479,7 @@ img {
         max-width: 80%;
         margin: 10px 30px;
     }
-    /* .team {
-        min-height: 100vh;
-        padding: 80px 0;
-    }
-    .team-item {
-        width: calc((100% / 2) - 194px);
-        margin: 0 35px 30px;
-        position: relative;
-        transition: box-shadow 0.5s ease;
-        border-radius: 20px;
-    } */
+    
 
     /* core team responsiveness */
     .container-core {

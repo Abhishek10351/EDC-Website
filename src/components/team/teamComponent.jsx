@@ -13,20 +13,21 @@ function getIconClassName(iconName) {
 
 export default function TeamComponent({
     name,
-    role,
+    designation,
     image,
-    LinkedIn,
-    Github,
-    Instagram,
+    linkedin,
+    github,
+    instagram,
     email,
+    linktree
 }) {
     return (
-        <div className="team-item coreteam-item">
-            <img src="https://placehold.co/100x100/png" alt="team" />
+        <div className="team-item webteam-item coreteam-item">
+            <img src="https://placehold.co/100/png" alt="team" />
             <h4>
                 {name}
                 <br />
-                <span>Coordinator</span>
+                <span>{designation}</span>
             </h4>
             <div className="social-links">
                 {email && (
@@ -38,31 +39,40 @@ export default function TeamComponent({
                         <i className={getIconClassName("email")} />
                     </a>
                 )}
-                {LinkedIn && (
+                {linkedin && (
                     <a
-                        href={`https://www.linkedin.com/in/${LinkedIn}`}
+                        href={`https://www.linkedin.com/in/${linkedin}`}
                         target="_blank"
                         rel="noreferrer"
                     >
                         <i className={getIconClassName("linkedin")} />
                     </a>
                 )}
-                {Github && (
+                {github && (
                     <a
-                        href={`https://www.github.com/${Github}`}
+                        href={`https://www.github.com/${github}`}
                         target="_blank"
                         rel="noreferrer"
                     >
                         <i className={getIconClassName("github")} />
                     </a>
                 )}
-                {Instagram && (
+                {instagram && (
                     <a
-                        href={`https://www.instagram.com/${Instagram}`}
+                        href={`https://www.instagram.com/${instagram}`}
                         target="_blank"
                         rel="noreferrer"
                     >
                         <i className={getIconClassName("instagram")} />
+                    </a>
+                )}
+                {linktree && (
+                    <a
+                        href={`https://www.linktr.ee/${linktree}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <i className={getIconClassName("linktree")} />
                     </a>
                 )}
             </div>
