@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Dr. Pranav Kumar Singh",
+        "designation": "Associate Professor, Dean(AER)",
+        "branch": "CSE"
+    },
+    {
+        "name": "Dr. Dipen Deka",
+        "designation": "Assistant Professor",
+        "branch": "IE"
+    },
+    {
+        "name": "Dr. Gunajit Sarma",
+        "designation": "Associate Professor",
+        "branch": "HSS"
+    },
+    {
+        "name": "Dr. Kaushik Ch Deva Sarma",
+        "designation": "Associate Professor",
+        "branch": "IE"
+    }
+]
